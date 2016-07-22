@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HulkAlarmManager</string>
+    <array name="array_alarm_msg">
+        <item>Hulk Say! Wake Up!</item>
+        <item>Hulk is Angry! Wake Up!</item>
+    </array>
+</resources>

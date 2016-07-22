@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hulk_potrait"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Alarm Settings"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#50ffffff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewVolume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="40"
+                android:text="Set Volume"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarVolume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutVibration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#50ffffff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewVibration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="60"
+                android:text="Vibration Mode"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/switchVibration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRintone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#50ffffff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewRintone1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="35"
+                android:text="Ringtone 1"
+
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonPlay1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:text="Play" />
+
+            <Switch
+                android:id="@+id/switchRingtone1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRintone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#50ffffff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewRintone2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="35"
+                android:text="Ringtone 2"
+
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonPlay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:text="Play" />
+
+            <Switch
+                android:id="@+id/switchRingtone2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRintone3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#50ffffff"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewRintone3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="35"
+                android:text="Ringtone 3"
+
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonPlay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:text="Play" />
+
+            <Switch
+                android:id="@+id/switchRingtone3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinnerAlarmText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#50ffffff"
+            android:entries="@array/array_alarm_msg"></Spinner>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="100"
+    android:padding="10dp"
+    android:background="#50ffffff"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imageButtonHulkIcon"
+        android:layout_width="0dp"
+        android:layout_weight="15"
+        android:scaleType="fitXY"
+        android:src="@drawable/hulk_one"
+        android:layout_height="wrap_content" />
+<TextView
+    android:id="@+id/textViewAlarmTitle"
+    android:textColor="@android:color/white"
+    android:layout_marginLeft="4dp"
+    android:layout_width="wrap_content"
+    android:maxLines="2"
+    android:visibility="gone"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textViewAlarmTime"
+        android:textColor="@android:color/white"
+        android:layout_weight="60"
+        android:layout_width="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonCancelAlarm"
+        android:textColor="@android:color/black"
+        android:layout_weight="25"
+        android:layout_width="0dp"
+        android:background="@android:color/white"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content" />
+</LinearLayout>

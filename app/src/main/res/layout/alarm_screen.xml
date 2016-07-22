@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hulk_potrait"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:text="Alarm Activated" />
+
+        <TextView
+            android:id="@+id/textViewAlarmMsg"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="Wake Up!" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHulk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hulk_one" />
+        <RelativeLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonDismiss"
+                android:text="Dismiss"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/buttonSnooze"
+                android:text="Snooze"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
